@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panji & Jihan — 20 Desember 2025</title>
+  <meta name="description" content="Undangan pernikahan Panji & Jihan — 20 Desember 2025 di Paruga Nae." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="nav" aria-label="Navigasi utama">
+    <div class="nav-inner">
+      <div class="brand">Panji <span>&</span> Jihan</div>
+      <div class="menu" role="menubar">
+        <a href="#home">Home</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#couple">Pasangan</a>
+        <a href="#event">Acara</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#gift">Kado</a>
+        <a href="#share">Share</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Drawer Mobile -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="brand" style="margin-bottom:12px">Navigasi</div>
+      <a href="#home">Home</a>
+      <a href="#countdown">Countdown</a>
+      <a href="#couple">Pasangan</a>
+      <a href="#event">Acara</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#gift">Kado</a>
+      <a href="#share">Share</a>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+ <header id="home" class="hero">
+  <div class="hero-media">
+    <img src="assets/images/panji1.jpeg" alt="Panji & Jihan" loading="lazy">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="names">Panji &amp; Jihan</h1>
+    <p class="date">20 Desember 2025 — Paruga Nae</p>
+    <a class="btn" href="#rsvp">Konfirmasi Kehadiran</a>
+  </div>
+</header>
+
+  <!-- ===== Audio Musik ===== -->
+ <audio id="bg-music" loop>
+  <source src="assets/music/music1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById('bg-music');
+
+  // Coba autoplay, beberapa browser mungkin memblok
+  music.play().catch(() => {
+    // Jika diblok, tunggu interaksi user
+    document.body.addEventListener('click', () => {
+      music.play();
+    }, { once: true });
+  });
+</script>
+
+  <!-- ===== Countdown ===== -->
+  <section id="countdown">
+    <div class="container">
+      <h2 class="section-title">Hitung Mundur</h2>
+      <p class="section-sub">Kami tidak sabar menanti kehadiranmu di hari bahagia kami.</p>
+      <div class="countdown">
+        <div class="tile"><div class="num" id="dd">00</div><div class="lbl">Hari</div></div>
+        <div class="tile"><div class="num" id="hh">00</div><div class="lbl">Jam</div></div>
+        <div class="tile"><div class="num" id="mm">00</div><div class="lbl">Menit</div></div>
+        <div class="tile"><div class="num" id="ss">00</div><div class="lbl">Detik</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pembuka Doa ===== -->
+  <section id="pembuka">
+    <div class="container">
+      <h2 class="section-title">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h2>
+      <p class="section-sub">Assalamu’alaikum warahmatullahi wabarakatuh</p>
+      <p class="section-sub">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”</p>
+      <p class="section-sub">— QS. Ar-Rum: 21</p>
+    </div>
+  </section>
+
+  <!-- ===== Couple ===== -->
+  <section id="couple" aria-labelledby="title-couple">
+  <div class="container">
+    <h2 class="section-title" id="title-couple">Pasangan</h2>
+    <p class="section-sub">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan kami.</p>
+    <div class="couple-grid">
+      <div class="couple-card">
+        <img src="assets/images/panji1.jpeg" alt="Panji" class="couple-photo">
+        <h3>Panji</h3>
+        <p>Putra dari Bapak Ahmad dan Ibu Siti</p>
+      </div>
+      <div class="couple-card">
+        <img src="assets/images/panji1.jpeg" alt="Jihan" class="couple-photo">
+        <h3>Jihan</h3>
+        <p>Putri dari Bapak Hasan dan Ibu Dewi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Event ===== -->
+  <section id="event" aria-labelledby="title-event">
+  <div class="container">
+    <h2 class="section-title" id="title-event">Detail Acara</h2>
+    <div class="details">
+      <div class="card2 event-card">
+        <div class="event-item">
+          <span class="icon">📅</span>
+          <div>
+            <p class="kv"><b>Tanggal</b><br>Sabtu, 20 Desember 2025</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <span class="icon">⏰</span>
+          <div>
+            <p class="kv"><b>Waktu</b><br>15:30 WITA</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <span class="icon">📍</span>
+          <div>
+            <p class="kv"><b>Lokasi</b><br>Paruga Nae</p>
+          </div>
+        </div>
+        <a class="btn gmaps-btn" target="_blank" rel="noopener" 
+           href="https://www.google.com/maps/search/?api=1&query=Paruga%20Nae">Lihat di Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Galeri</h2>
+      <p class="section-sub">Beberapa momen kebersamaan kami.</p>
+      <div class="grid">
+        <img src="assets/images/panji1.jpeg" alt="Galeri 1">
+        <img src="assets/images/panji1.jpeg" alt="Galeri 2">
+        <img src="assets/images/panji1.jpeg" alt="Galeri 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RSVP ===== -->
+  <section id="rsvp">
+  <div class="rsvp-card fancy">
+    <h3>Konfirmasi Kehadiran</h3>
+    <p>Mohon isi form berikut untuk mengonfirmasi kehadiran Anda di acara kami.</p>
+    
+    <form id="rsvp-form">
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Nama Lengkap</label>
+      </div>
+      
+      <div class="input-group">
+        <select name="attendance" required>
+          <option value="" disabled selected></option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+        <label>Apakah Anda hadir?</label>
+      </div>
+      
+      <div class="input-group">
+        <input type="number" name="guests" min="0">
+        <label>Jumlah Tamu (jika ada)</label>
+      </div>
+      
+      <div class="input-group">
+        <textarea name="message" rows="3"></textarea>
+        <label>Pesan / Doa untuk kami</label>
+      </div>
+      
+      <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- ===== Gift ===== -->
+  <section id="gift">
+    <div class="container">
+      <h2 class="section-title">Kado Online</h2>
+      <p class="section-sub">Doa Anda adalah hadiah terbaik. Jika berkenan berbagi kebahagiaan, berikut pilihan transfer:</p>
+      <div class="gift-list">
+        <div class="gift-item">
+          <div><b>BCA</b> — 1234567890</div>
+          <button class="btn secondary" data-copy="1234567890">Salin</button>
+        </div>
+        <div class="gift-item">
+          <div><b>BCA</b> — 1234567890</div>
+          <button class="btn secondary" data-copy="1234567890">Salin</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Share ===== -->
+  <section id="share">
+    <div class="container">
+      <h2 class="section-title">Bagikan Undangan</h2>
+      <p class="section-sub">Sebarkan kabar bahagia ini ke kerabat dan sahabat.</p>
+      <div class="share">
+        <a id="waShare" class="btn" href="#">Share WhatsApp</a>
+        <a id="copyLink" class="btn secondary" href="#">Salin Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Closing ===== -->
+  <section class="closing">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">Terima Kasih</h2>
+      <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+      <p>Wassalamualaikum warahmatullahi wabarakatuh.</p>
+      <p style="color:var(--muted)"><small>© 2025 Panji & Jihan</small></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
